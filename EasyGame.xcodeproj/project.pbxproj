@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5139338318A826E30096940A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5139336518A826E30096940A /* AppDelegate.m */; };
+		5139338518A826E30096940A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5139336818A826E30096940A /* main.m */; };
+		5139338618A826E30096940A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5139336918A826E30096940A /* Main.storyboard */; };
+		5139338718A826E30096940A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5139336B18A826E30096940A /* ViewController.m */; };
+		5139338818A826E30096940A /* NSMutableArray+Easy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5139336E18A826E30096940A /* NSMutableArray+Easy.m */; };
+		5139338918A826E30096940A /* NSMutableString+Easy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5139337018A826E30096940A /* NSMutableString+Easy.m */; };
+		5139338A18A826E30096940A /* NSString+Easy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5139337218A826E30096940A /* NSString+Easy.m */; };
+		5139338B18A826E30096940A /* SKLabelNode+Easy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5139337418A826E30096940A /* SKLabelNode+Easy.m */; };
+		5139338C18A826E30096940A /* SKNode+Easy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5139337618A826E30096940A /* SKNode+Easy.m */; };
+		5139338D18A826E30096940A /* SKSpriteNode+Easy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5139337818A826E30096940A /* SKSpriteNode+Easy.m */; };
+		5139338E18A826E30096940A /* Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 5139337B18A826E30096940A /* Colors.m */; };
+		5139338F18A826E30096940A /* make.m in Sources */ = {isa = PBXBuildFile; fileRef = 5139337D18A826E30096940A /* make.m */; };
+		5139339018A826E30096940A /* Rewrites.m in Sources */ = {isa = PBXBuildFile; fileRef = 5139337F18A826E30096940A /* Rewrites.m */; };
+		5139339118A826E30096940A /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5139338118A826E30096940A /* Scene.m */; };
+		5139339218A826E30096940A /* README-EASYOC in Resources */ = {isa = PBXBuildFile; fileRef = 5139338218A826E30096940A /* README-EASYOC */; };
+		5139339518A826EF0096940A /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5139339418A826EF0096940A /* GameScene.m */; };
+		5139339718A826F80096940A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5139339618A826F80096940A /* Images.xcassets */; };
+		513933B318A827190096940A /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5139339918A827190096940A /* background.png */; };
+		513933B418A827190096940A /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5139339A18A827190096940A /* background@2x.png */; };
+		513933B518A827190096940A /* ballBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 5139339B18A827190096940A /* ballBlue.png */; };
+		513933B618A827190096940A /* ballBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5139339C18A827190096940A /* ballBlue@2x.png */; };
+		513933B718A827190096940A /* ballCyan.png in Resources */ = {isa = PBXBuildFile; fileRef = 5139339D18A827190096940A /* ballCyan.png */; };
+		513933B818A827190096940A /* ballCyan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5139339E18A827190096940A /* ballCyan@2x.png */; };
+		513933B918A827190096940A /* ballGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 5139339F18A827190096940A /* ballGreen.png */; };
+		513933BA18A827190096940A /* ballGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933A018A827190096940A /* ballGreen@2x.png */; };
+		513933BB18A827190096940A /* ballGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933A118A827190096940A /* ballGrey.png */; };
+		513933BC18A827190096940A /* ballGrey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933A218A827190096940A /* ballGrey@2x.png */; };
+		513933BD18A827190096940A /* ballPurple.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933A318A827190096940A /* ballPurple.png */; };
+		513933BE18A827190096940A /* ballPurple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933A418A827190096940A /* ballPurple@2x.png */; };
+		513933BF18A827190096940A /* ballRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933A518A827190096940A /* ballRed.png */; };
+		513933C018A827190096940A /* ballRed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933A618A827190096940A /* ballRed@2x.png */; };
+		513933C118A827190096940A /* ballYellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933A718A827190096940A /* ballYellow.png */; };
+		513933C218A827190096940A /* ballYellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933A818A827190096940A /* ballYellow@2x.png */; };
+		513933C318A827190096940A /* bouncer.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933A918A827190096940A /* bouncer.png */; };
+		513933C418A827190096940A /* bouncer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933AA18A827190096940A /* bouncer@2x.png */; };
+		513933C518A827190096940A /* slotBaseBad.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933AB18A827190096940A /* slotBaseBad.png */; };
+		513933C618A827190096940A /* slotBaseBad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933AC18A827190096940A /* slotBaseBad@2x.png */; };
+		513933C718A827190096940A /* slotBaseGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933AD18A827190096940A /* slotBaseGood.png */; };
+		513933C818A827190096940A /* slotBaseGood@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933AE18A827190096940A /* slotBaseGood@2x.png */; };
+		513933C918A827190096940A /* slotGlowBad.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933AF18A827190096940A /* slotGlowBad.png */; };
+		513933CA18A827190096940A /* slotGlowBad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933B018A827190096940A /* slotGlowBad@2x.png */; };
+		513933CB18A827190096940A /* slotGlowGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933B118A827190096940A /* slotGlowGood.png */; };
+		513933CC18A827190096940A /* slotGlowGood@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 513933B218A827190096940A /* slotGlowGood@2x.png */; };
+		518D32DA189A4F3A00822FEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518D32D9189A4F3A00822FEB /* Foundation.framework */; };
+		518D32DC189A4F3A00822FEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518D32DB189A4F3A00822FEB /* CoreGraphics.framework */; };
+		518D32DE189A4F3A00822FEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518D32DD189A4F3A00822FEB /* UIKit.framework */; };
+		518D32E0189A4F3A00822FEB /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518D32DF189A4F3A00822FEB /* SpriteKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5139336418A826E30096940A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5139336518A826E30096940A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5139336618A826E30096940A /* EasyGame-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EasyGame-Info.plist"; sourceTree = "<group>"; };
+		5139336718A826E30096940A /* EasyGame-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EasyGame-Prefix.pch"; sourceTree = "<group>"; };
+		5139336818A826E30096940A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5139336918A826E30096940A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5139336A18A826E30096940A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5139336B18A826E30096940A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5139336D18A826E30096940A /* NSMutableArray+Easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Easy.h"; sourceTree = "<group>"; };
+		5139336E18A826E30096940A /* NSMutableArray+Easy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Easy.m"; sourceTree = "<group>"; };
+		5139336F18A826E30096940A /* NSMutableString+Easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+Easy.h"; sourceTree = "<group>"; };
+		5139337018A826E30096940A /* NSMutableString+Easy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+Easy.m"; sourceTree = "<group>"; };
+		5139337118A826E30096940A /* NSString+Easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Easy.h"; sourceTree = "<group>"; };
+		5139337218A826E30096940A /* NSString+Easy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Easy.m"; sourceTree = "<group>"; };
+		5139337318A826E30096940A /* SKLabelNode+Easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKLabelNode+Easy.h"; sourceTree = "<group>"; };
+		5139337418A826E30096940A /* SKLabelNode+Easy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKLabelNode+Easy.m"; sourceTree = "<group>"; };
+		5139337518A826E30096940A /* SKNode+Easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+Easy.h"; sourceTree = "<group>"; };
+		5139337618A826E30096940A /* SKNode+Easy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+Easy.m"; sourceTree = "<group>"; };
+		5139337718A826E30096940A /* SKSpriteNode+Easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKSpriteNode+Easy.h"; sourceTree = "<group>"; };
+		5139337818A826E30096940A /* SKSpriteNode+Easy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKSpriteNode+Easy.m"; sourceTree = "<group>"; };
+		5139337A18A826E30096940A /* Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = "<group>"; };
+		5139337B18A826E30096940A /* Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colors.m; sourceTree = "<group>"; };
+		5139337C18A826E30096940A /* make.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = make.h; sourceTree = "<group>"; };
+		5139337D18A826E30096940A /* make.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = make.m; sourceTree = "<group>"; };
+		5139337E18A826E30096940A /* Rewrites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rewrites.h; sourceTree = "<group>"; };
+		5139337F18A826E30096940A /* Rewrites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rewrites.m; sourceTree = "<group>"; };
+		5139338018A826E30096940A /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		5139338118A826E30096940A /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
+		5139338218A826E30096940A /* README-EASYOC */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "README-EASYOC"; path = "EasyGame/EasyOC/README-EASYOC"; sourceTree = SOURCE_ROOT; };
+		5139339318A826EF0096940A /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = EasyGame/GameScene.h; sourceTree = SOURCE_ROOT; };
+		5139339418A826EF0096940A /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameScene.m; path = EasyGame/GameScene.m; sourceTree = SOURCE_ROOT; };
+		5139339618A826F80096940A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = EasyGame/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		5139339918A827190096940A /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		5139339A18A827190096940A /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		5139339B18A827190096940A /* ballBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ballBlue.png; sourceTree = "<group>"; };
+		5139339C18A827190096940A /* ballBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ballBlue@2x.png"; sourceTree = "<group>"; };
+		5139339D18A827190096940A /* ballCyan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ballCyan.png; sourceTree = "<group>"; };
+		5139339E18A827190096940A /* ballCyan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ballCyan@2x.png"; sourceTree = "<group>"; };
+		5139339F18A827190096940A /* ballGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ballGreen.png; sourceTree = "<group>"; };
+		513933A018A827190096940A /* ballGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ballGreen@2x.png"; sourceTree = "<group>"; };
+		513933A118A827190096940A /* ballGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ballGrey.png; sourceTree = "<group>"; };
+		513933A218A827190096940A /* ballGrey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ballGrey@2x.png"; sourceTree = "<group>"; };
+		513933A318A827190096940A /* ballPurple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ballPurple.png; sourceTree = "<group>"; };
+		513933A418A827190096940A /* ballPurple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ballPurple@2x.png"; sourceTree = "<group>"; };
+		513933A518A827190096940A /* ballRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ballRed.png; sourceTree = "<group>"; };
+		513933A618A827190096940A /* ballRed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ballRed@2x.png"; sourceTree = "<group>"; };
+		513933A718A827190096940A /* ballYellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ballYellow.png; sourceTree = "<group>"; };
+		513933A818A827190096940A /* ballYellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ballYellow@2x.png"; sourceTree = "<group>"; };
+		513933A918A827190096940A /* bouncer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bouncer.png; sourceTree = "<group>"; };
+		513933AA18A827190096940A /* bouncer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bouncer@2x.png"; sourceTree = "<group>"; };
+		513933AB18A827190096940A /* slotBaseBad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slotBaseBad.png; sourceTree = "<group>"; };
+		513933AC18A827190096940A /* slotBaseBad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slotBaseBad@2x.png"; sourceTree = "<group>"; };
+		513933AD18A827190096940A /* slotBaseGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slotBaseGood.png; sourceTree = "<group>"; };
+		513933AE18A827190096940A /* slotBaseGood@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slotBaseGood@2x.png"; sourceTree = "<group>"; };
+		513933AF18A827190096940A /* slotGlowBad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slotGlowBad.png; sourceTree = "<group>"; };
+		513933B018A827190096940A /* slotGlowBad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slotGlowBad@2x.png"; sourceTree = "<group>"; };
+		513933B118A827190096940A /* slotGlowGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slotGlowGood.png; sourceTree = "<group>"; };
+		513933B218A827190096940A /* slotGlowGood@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slotGlowGood@2x.png"; sourceTree = "<group>"; };
+		518D32D6189A4F3A00822FEB /* EasyGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		518D32D9189A4F3A00822FEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		518D32DB189A4F3A00822FEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		518D32DD189A4F3A00822FEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		518D32DF189A4F3A00822FEB /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		518D32FF189A4F3A00822FEB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		518D32D3189A4F3A00822FEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518D32DC189A4F3A00822FEB /* CoreGraphics.framework in Frameworks */,
+				518D32DE189A4F3A00822FEB /* UIKit.framework in Frameworks */,
+				518D32E0189A4F3A00822FEB /* SpriteKit.framework in Frameworks */,
+				518D32DA189A4F3A00822FEB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5139336118A826250096940A /* EasyOC */ = {
+			isa = PBXGroup;
+			children = (
+				5139336318A826E30096940A /* Base */,
+				5139336C18A826E30096940A /* Categories */,
+				5139337918A826E30096940A /* Easy */,
+				5139338218A826E30096940A /* README-EASYOC */,
+			);
+			name = EasyOC;
+			sourceTree = "<group>";
+		};
+		5139336318A826E30096940A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5139336418A826E30096940A /* AppDelegate.h */,
+				5139336518A826E30096940A /* AppDelegate.m */,
+				5139336618A826E30096940A /* EasyGame-Info.plist */,
+				5139336718A826E30096940A /* EasyGame-Prefix.pch */,
+				5139336818A826E30096940A /* main.m */,
+				5139336918A826E30096940A /* Main.storyboard */,
+				5139336A18A826E30096940A /* ViewController.h */,
+				5139336B18A826E30096940A /* ViewController.m */,
+			);
+			name = Base;
+			path = EasyGame/EasyOC/Base;
+			sourceTree = SOURCE_ROOT;
+		};
+		5139336C18A826E30096940A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5139336D18A826E30096940A /* NSMutableArray+Easy.h */,
+				5139336E18A826E30096940A /* NSMutableArray+Easy.m */,
+				5139336F18A826E30096940A /* NSMutableString+Easy.h */,
+				5139337018A826E30096940A /* NSMutableString+Easy.m */,
+				5139337118A826E30096940A /* NSString+Easy.h */,
+				5139337218A826E30096940A /* NSString+Easy.m */,
+				5139337318A826E30096940A /* SKLabelNode+Easy.h */,
+				5139337418A826E30096940A /* SKLabelNode+Easy.m */,
+				5139337518A826E30096940A /* SKNode+Easy.h */,
+				5139337618A826E30096940A /* SKNode+Easy.m */,
+				5139337718A826E30096940A /* SKSpriteNode+Easy.h */,
+				5139337818A826E30096940A /* SKSpriteNode+Easy.m */,
+			);
+			name = Categories;
+			path = EasyGame/EasyOC/Categories;
+			sourceTree = SOURCE_ROOT;
+		};
+		5139337918A826E30096940A /* Easy */ = {
+			isa = PBXGroup;
+			children = (
+				5139337A18A826E30096940A /* Colors.h */,
+				5139337B18A826E30096940A /* Colors.m */,
+				5139337C18A826E30096940A /* make.h */,
+				5139337D18A826E30096940A /* make.m */,
+				5139337E18A826E30096940A /* Rewrites.h */,
+				5139337F18A826E30096940A /* Rewrites.m */,
+				5139338018A826E30096940A /* Scene.h */,
+				5139338118A826E30096940A /* Scene.m */,
+			);
+			name = Easy;
+			path = EasyGame/EasyOC/Easy;
+			sourceTree = SOURCE_ROOT;
+		};
+		5139339818A827190096940A /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				5139339918A827190096940A /* background.png */,
+				5139339A18A827190096940A /* background@2x.png */,
+				5139339B18A827190096940A /* ballBlue.png */,
+				5139339C18A827190096940A /* ballBlue@2x.png */,
+				5139339D18A827190096940A /* ballCyan.png */,
+				5139339E18A827190096940A /* ballCyan@2x.png */,
+				5139339F18A827190096940A /* ballGreen.png */,
+				513933A018A827190096940A /* ballGreen@2x.png */,
+				513933A118A827190096940A /* ballGrey.png */,
+				513933A218A827190096940A /* ballGrey@2x.png */,
+				513933A318A827190096940A /* ballPurple.png */,
+				513933A418A827190096940A /* ballPurple@2x.png */,
+				513933A518A827190096940A /* ballRed.png */,
+				513933A618A827190096940A /* ballRed@2x.png */,
+				513933A718A827190096940A /* ballYellow.png */,
+				513933A818A827190096940A /* ballYellow@2x.png */,
+				513933A918A827190096940A /* bouncer.png */,
+				513933AA18A827190096940A /* bouncer@2x.png */,
+				513933AB18A827190096940A /* slotBaseBad.png */,
+				513933AC18A827190096940A /* slotBaseBad@2x.png */,
+				513933AD18A827190096940A /* slotBaseGood.png */,
+				513933AE18A827190096940A /* slotBaseGood@2x.png */,
+				513933AF18A827190096940A /* slotGlowBad.png */,
+				513933B018A827190096940A /* slotGlowBad@2x.png */,
+				513933B118A827190096940A /* slotGlowGood.png */,
+				513933B218A827190096940A /* slotGlowGood@2x.png */,
+			);
+			name = Content;
+			path = EasyGame/Content;
+			sourceTree = SOURCE_ROOT;
+		};
+		518D32CD189A4F3A00822FEB = {
+			isa = PBXGroup;
+			children = (
+				518D32E1189A4F3A00822FEB /* EasyGame */,
+				518D32D8189A4F3A00822FEB /* Frameworks */,
+				518D32D7189A4F3A00822FEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		518D32D7189A4F3A00822FEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				518D32D6189A4F3A00822FEB /* EasyGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		518D32D8189A4F3A00822FEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				518D32D9189A4F3A00822FEB /* Foundation.framework */,
+				518D32DB189A4F3A00822FEB /* CoreGraphics.framework */,
+				518D32DD189A4F3A00822FEB /* UIKit.framework */,
+				518D32DF189A4F3A00822FEB /* SpriteKit.framework */,
+				518D32FF189A4F3A00822FEB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		518D32E1189A4F3A00822FEB /* EasyGame */ = {
+			isa = PBXGroup;
+			children = (
+				5139336118A826250096940A /* EasyOC */,
+				5139339318A826EF0096940A /* GameScene.h */,
+				5139339418A826EF0096940A /* GameScene.m */,
+				5139339618A826F80096940A /* Images.xcassets */,
+				518D32E2189A4F3A00822FEB /* Supporting Files */,
+			);
+			name = EasyGame;
+			path = RootGame;
+			sourceTree = "<group>";
+		};
+		518D32E2189A4F3A00822FEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5139339818A827190096940A /* Content */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		518D32D5189A4F3A00822FEB /* EasyGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 518D330F189A4F3B00822FEB /* Build configuration list for PBXNativeTarget "EasyGame" */;
+			buildPhases = (
+				518D32D2189A4F3A00822FEB /* Sources */,
+				518D32D3189A4F3A00822FEB /* Frameworks */,
+				518D32D4189A4F3A00822FEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyGame;
+			productName = RootGame;
+			productReference = 518D32D6189A4F3A00822FEB /* EasyGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		518D32CE189A4F3A00822FEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = PaulH;
+			};
+			buildConfigurationList = 518D32D1189A4F3A00822FEB /* Build configuration list for PBXProject "EasyGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 518D32CD189A4F3A00822FEB;
+			productRefGroup = 518D32D7189A4F3A00822FEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				518D32D5189A4F3A00822FEB /* EasyGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		518D32D4189A4F3A00822FEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				513933BC18A827190096940A /* ballGrey@2x.png in Resources */,
+				513933C718A827190096940A /* slotBaseGood.png in Resources */,
+				513933BE18A827190096940A /* ballPurple@2x.png in Resources */,
+				513933B718A827190096940A /* ballCyan.png in Resources */,
+				5139339718A826F80096940A /* Images.xcassets in Resources */,
+				513933B518A827190096940A /* ballBlue.png in Resources */,
+				513933C218A827190096940A /* ballYellow@2x.png in Resources */,
+				513933B318A827190096940A /* background.png in Resources */,
+				513933C418A827190096940A /* bouncer@2x.png in Resources */,
+				513933BF18A827190096940A /* ballRed.png in Resources */,
+				513933C018A827190096940A /* ballRed@2x.png in Resources */,
+				5139339218A826E30096940A /* README-EASYOC in Resources */,
+				513933C618A827190096940A /* slotBaseBad@2x.png in Resources */,
+				513933CA18A827190096940A /* slotGlowBad@2x.png in Resources */,
+				513933C118A827190096940A /* ballYellow.png in Resources */,
+				513933C318A827190096940A /* bouncer.png in Resources */,
+				513933C818A827190096940A /* slotBaseGood@2x.png in Resources */,
+				513933C918A827190096940A /* slotGlowBad.png in Resources */,
+				513933B918A827190096940A /* ballGreen.png in Resources */,
+				513933CC18A827190096940A /* slotGlowGood@2x.png in Resources */,
+				513933B418A827190096940A /* background@2x.png in Resources */,
+				513933CB18A827190096940A /* slotGlowGood.png in Resources */,
+				5139338618A826E30096940A /* Main.storyboard in Resources */,
+				513933BB18A827190096940A /* ballGrey.png in Resources */,
+				513933C518A827190096940A /* slotBaseBad.png in Resources */,
+				513933BA18A827190096940A /* ballGreen@2x.png in Resources */,
+				513933B818A827190096940A /* ballCyan@2x.png in Resources */,
+				513933BD18A827190096940A /* ballPurple.png in Resources */,
+				513933B618A827190096940A /* ballBlue@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		518D32D2189A4F3A00822FEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5139338F18A826E30096940A /* make.m in Sources */,
+				5139338B18A826E30096940A /* SKLabelNode+Easy.m in Sources */,
+				5139339018A826E30096940A /* Rewrites.m in Sources */,
+				5139338E18A826E30096940A /* Colors.m in Sources */,
+				5139338918A826E30096940A /* NSMutableString+Easy.m in Sources */,
+				5139338C18A826E30096940A /* SKNode+Easy.m in Sources */,
+				5139339518A826EF0096940A /* GameScene.m in Sources */,
+				5139338518A826E30096940A /* main.m in Sources */,
+				5139339118A826E30096940A /* Scene.m in Sources */,
+				5139338318A826E30096940A /* AppDelegate.m in Sources */,
+				5139338718A826E30096940A /* ViewController.m in Sources */,
+				5139338D18A826E30096940A /* SKSpriteNode+Easy.m in Sources */,
+				5139338818A826E30096940A /* NSMutableArray+Easy.m in Sources */,
+				5139338A18A826E30096940A /* NSString+Easy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		518D330D189A4F3B00822FEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		518D330E189A4F3B00822FEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		518D3310189A4F3B00822FEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyGame/EasyOC/Base/EasyGame-Prefix.pch";
+				INFOPLIST_FILE = "EasyGame/EasyOC/Base/EasyGame-Info.plist";
+				PRODUCT_NAME = EasyGame;
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		518D3311189A4F3B00822FEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyGame/EasyOC/Base/EasyGame-Prefix.pch";
+				INFOPLIST_FILE = "EasyGame/EasyOC/Base/EasyGame-Info.plist";
+				PRODUCT_NAME = EasyGame;
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		518D32D1189A4F3A00822FEB /* Build configuration list for PBXProject "EasyGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518D330D189A4F3B00822FEB /* Debug */,
+				518D330E189A4F3B00822FEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		518D330F189A4F3B00822FEB /* Build configuration list for PBXNativeTarget "EasyGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518D3310189A4F3B00822FEB /* Debug */,
+				518D3311189A4F3B00822FEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 518D32CE189A4F3A00822FEB /* Project object */;
+}

@@ -1,0 +1,128 @@
+This is EasyOC v0.1, a simple set of wrappers, rewrites and hacks for Objective C
+that make it easier for beginners. The thinking behind its creation is simple:
+if you're going to teach people to program, focus on what they can make first
+rather than how it all works. So, pointers are gone, @" for strings is gone,
+properties are gone, and so on.
+
+Some of the changes will seem trivial (e.g. add: for NSMutableArray), but some
+are much more advanced and the combination of trivial and advanced produces
+something that is much clearer for first-timers.
+
+It was written by Paul Hudson, but it's licensed under the public domain.
+Please use this code however you please.
+
+
+
+===
+FAQ
+===
+
+Q: Why not just teach JavaScript?
+
+A: JavaScript is a great language for lots of things, but my initial goal was to
+help children at a school with a 1:1 iPad programme. They could (and arguably
+should!) learn JavaScript too, but having something in Objective C means
+they can make apps for their iPads.
+
+The goal of EasyOC is to get results quickly, not to teach language and theory.
+
+
+
+Q: Why not just use drag-and-drop blocks like code.org?
+
+A: Code.org is an awesome way of teaching logic and program flow, and its link
+between draggable coding components and actual code is lovely. EasyOC is designed
+for a level up: it's for people who can already code a little and are looking for
+an easy way to make apps for their iDevice.
+
+
+
+Q: This is just syntactic sugar – surely it just delays the inevitable?
+
+A: It is indeed mostly syntactic sugar, although there are a handful of 
+helper functions that simplify things. But it does serve a purpose: by
+removing the complexities of the /language/ it lets students focus on
+the complexities of the /problem/. 
+
+
+
+Q: Your code isn't going to be as fast as proper Objective C - why should I use it?
+
+A: To be fair, EasyOC *is* proper Objective C - insofar as it is syntactically
+and semantically valid. Sure, it has wrappers to make things easier to understand,
+but the actual performance cost is extremely limited. Clearly using percentages
+for colours is suboptimal, but it's a small price to pay.
+
+
+
+Q: What's with the "make" class? Why not just use the normal constructors?
+
+A: There are several reasons for this:
+
+1) EasyOC typedefs NSMutableArray* to be "array", which means you can use "array"
+as your data type everywhere you need to. However, you can't send messages to it
+to create a new array, because "[array arrayWithCapacity:16]" would actually mean
+"[array* arrayWithCapacity:16]", which is not valid. The "no pointers" rule
+means a better solution was needed.
+
+2) Several constructors expect to see NSStrings being passed in, and having to explain
+why @"foo" is different to "foo" is a waste of time at this early point.
+
+3) Many classes have such a wide range of constructors that it can be overwhelming, and
+many of them have confusing names for beginners. So, we've trimmed the list to the key
+ones, amended all of them to use C strings rather than NSStrings, then changed
+parameters such as "alpha" to be "opacity".
+
+
+
+Q: Why do you hate pointers so much?
+
+A: Pointers are really important things, but Objective C uses them in what can be a
+counter-intuitive way. For example, can you ever say "NSString foo" or
+"NSArray bar"? No - these must always be "NSString *foo" or "NSArray *bar".
+If these objects can never be statically allocated, why can't clang just add the
+pointer for us at compile time? If you think that sounds crazy, consider how
+CGContextRef works.
+
+
+
+Q: If I make something with this, can I sell it?
+
+A: This code is all public domain. That means you can use it, modify it, rewrite it,
+fix it, break it, sell it, and even delete my name and pretend you wrote it.
+
+
+
+Q: Now that I've made something, how can I go from here to "real" Objective C?
+
+A: The first step is to look inside the file Rewrites.h, because that's where
+Objective C types get munged into EasyOC types. What you'll see is a lot of this:
+
+typedef NSMutableString* string;
+
+That means "when the user says 'string' pretend they meant 'NSMutableString*' instead."
+So, if want to graduate from EasyOC, your first step is to change things like "string"
+so they are "NSMutableString*". 
+
+You'll also see this kind of thing:
+
+#define object @property (strong)
+
+This two lines mean "when you see 'object' pretend the user had written 
+'@property (strong)' instead." So, your next step would be to replace "object"
+and "value" with @property (strong) and '@property (assign)'.
+
+You can now delete Rewrites.h, and you're about half way there.
+
+The next step is to look inside the Categories folder. That's where simple method
+calls are converted to more advanced method calls, so you need to see the ones
+you're using and copy them into your code. If you see C strings being converted
+to NSStrings (look for "[NSString stringWithUTF8String:]") then you can just remove
+that - if you're working without EasyOC you don't need to use C strings.
+
+
+
+Q: Where can I send corrections and hate mail?
+
+A: You can email me at paul.hudson@gmail.com. I live for hate mail.
+
